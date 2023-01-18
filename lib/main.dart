@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text('To-Do App'),
         centerTitle: true,
       ),
-      body: TaskList(),
+      body: const TaskList(),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _addtodo,
         label: const Text('Add Task'),
