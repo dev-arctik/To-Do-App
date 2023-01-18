@@ -32,6 +32,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final TextEditingController _controller = TextEditingController();
 
+// To show the dialogue when click on add task
   void _addtodo() {
     showDialog(
         context: context,
@@ -75,11 +76,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Title of app
       appBar: AppBar(
         title: const Text('To-Do App'),
         centerTitle: true,
       ),
-      body: const TaskList(),
+
+      //It is important the Tasklist should not be const so it updates the screen for changes
+      // ignore: prefer_const_constructors
+      body: TaskList(),
+
+      // Floating action button
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _addtodo,
         label: const Text('Add Task'),
