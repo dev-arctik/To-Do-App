@@ -1,6 +1,6 @@
 # to_do_app
 
-A new Flutter project.
+Flutter Project to create simple and straight forward todo app.
 
 ## Getting Started
 
